@@ -66,6 +66,7 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 * Zijn de horrorboeken dikker geworden ten opzichte van de fantasyboeken
 	* Zijn hier nog speciale redenen voor? (Films die zijn uitgekomen bijvoorbeeld)
 * Is er een verschil tussen de jaren heen van het aantal schrijvers voor deze genres?
+* Zijn er meer Nederlandse horrorboeken dan Engelse horrorboeken?
 
 ## Hypothese
 **H1** Sinds 1975 zijn er meer horrorboeken dan fantasyboeken bijgekomen
@@ -83,10 +84,10 @@ Wat eventueel handig kan zijn (denk ik?) :
 * Samenvatting
 
 ## Bevindingen
-Tijdens het zoeken in de ben ik tot de volgende conclusies gekomen :
-> Je krijgt maar 20 resultaten per keer maar je kan met page: '2' een andere pagina opvragen 
-> Veel data heb je niet nodig zoals bijvoorbeeld frabl & notes
-> Sommige data is niet aanwezig
+Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekomen :
+* Je krijgt maar 20 resultaten per keer maar je kan met page: '2' een andere pagina opvragen.
+* Veel data heb je niet nodig zoals bijvoorbeeld frabl & notes.
+* Sommige data komt terug als *object* of als *array*.
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
