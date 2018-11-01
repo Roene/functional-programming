@@ -82,6 +82,7 @@ Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te be
 Wat eventueel handig kan zijn (denk ik?) :
 * Titels
 * Samenvatting
+* Taal
 
 ## Bevindingen
 Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekomen :
