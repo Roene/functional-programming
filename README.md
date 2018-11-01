@@ -96,4 +96,4 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * [Daniel van de Velde](https://github.com/DanielvandeVelde)
 
 ## Licentie
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) © [Roene Verbeek](https://github.com/Roene)
