@@ -19,7 +19,7 @@ Tijdens dit project vond ik het lastig om uit te zoeken wat ik precies stap voor
 - [X] Verzin deelvragen.
 - [X] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
 - [X] Haal deze data uit de API en sla die op in jouw eigen "datastore".
-- [ ] Doorzoek die data op patronen
+- [X] Doorzoek die data op patronen
 - [ ] Visualiseer de patronen met D3
 
 ## Instalatie
@@ -93,7 +93,9 @@ Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekome
 Nadat ik erachter ben gekomen hoe ik data naar mijn eigen structuur kan schrijven ben ik gaan filteren op data die ik zelf wilde hebben. 
 Vervolgens ben ik gaan kijken of ik al kon kijken of ik wat nuttige informatie uit deze data kon halen. Zo ben ik erachter gekomen dat :
 * Het eerste thrillerboek in de OBA uit 1982 komt en 170 pagina's heeft
-* Het nieuweste thrillerboek in de OBA uit 2018 komt en 374 pagina's heeft. 
+* Het nieuwste thrillerboek in de OBA uit 2018 komt en 374 pagina's heeft. 
+* Het eerste sciencefictionboek in de OBA komt uit 1991 en 298 pagina's heeft.
+* Het nieuwse sciencefictionboek in de OBA komt uit 2018 en 237 pagina's heeft.  
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
