@@ -62,14 +62,14 @@ Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn thrillerboeken ten opzichte van de sciencefictionboeken gegroeid in de periode 1975-2018?*
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
-* Zijn er meer boeken met het genre horror bij gekomen dan het genre fantasy?
-* Zijn de horrorboeken dikker geworden ten opzichte van de fantasyboeken
+* Zijn er meer boeken met het genre thriller bij gekomen dan het genre sciencefiction?
+* Zijn de thrillerboeken dikker geworden ten opzichte van de sciencefiction
 	* Zijn hier nog speciale redenen voor? (Films die zijn uitgekomen bijvoorbeeld)
 * Is er een verschil tussen de jaren heen van het aantal schrijvers voor deze genres?
-* Zijn er meer Nederlandse horrorboeken dan Engelse horrorboeken?
+* Zijn er meer Nederlandse thrillerboeken dan Engelse thrillerboeken?
 
 ## Hypothese
-**H1** Sinds 1975 zijn er meer horrorboeken dan fantasyboeken bijgekomen
+**H1** Sinds 1975 zijn er meer thrillerboeken dan sciencefiction bijgekomen
 
 ## Verwachte data
 Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te beantwoorden :
@@ -91,6 +91,9 @@ Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekome
 * Sommige data komt terug als *object* of als *array*.
 
 Nadat ik erachter ben gekomen hoe ik data naar mijn eigen structuur kan schrijven ben ik gaan filteren op data die ik zelf wilde hebben. 
+Vervolgens ben ik gaan kijken of ik al kon kijken of ik wat nuttige informatie uit deze data kon halen. Zo ben ik erachter gekomen dat :
+* Het eerste thrillerboek in de OBA uit 1982 komt en 170 pagina's heeft
+* Het nieuweste thrillerboek in de OBA uit 2018 komt en 374 pagina's heeft. 
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
