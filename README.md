@@ -6,14 +6,13 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Installatie](#installatie)
 * [Interessante data](#interessante-data)
 * [Onderzoeksvragen](#onderzoeksvragen)
-* [Deelvragen](#deelvragen)
 * [Problemen](#problemen)
 * [Shout outs](#shout-outs)
 * [Licentie](#licentie)
 
 ## To-Do
 Tijdens dit project vond ik het lastig om uit te zoeken wat ik precies stap voor stap kon doen. Dit stappenplan van [Laursens](https://github.com/Razpudding) heeft mij hierin geholpen.
- 
+
 - [X] Hello API.
 - [X] What the 🐒 zit er in de API? Krijg een idee van de informatie die je uit de API kan halen.
 - [X] Verzin onderzoeksvragen.
@@ -36,7 +35,7 @@ Dit project maakt gebruik van de volgende packages :
 * [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Interessante data
-Tijdens het zoeken binnen de API ben ik gaan kijken welke data er terug kwam en welke hier interessant van is. 
+📊 Tijdens het zoeken binnen de API ben ik gaan kijken welke data er terug kwam en welke hier interessant van is. 
 * Titel
 * Publicatie jaar
 * Autheurs 
@@ -61,9 +60,8 @@ Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 * Hoe zijn de boeken over de islam ten opzichte van de boeken over het christendom gegeroeid sinds 1990?
 
 De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn horror boeken ten opzichte van de fantasy boeken gegroeid in de periode 1975-2018?*
-Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
+Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
-### Deelvragen
 * Zijn er meer boeken met het genre horror bij gekomen dan het genre fantasy?
 * Zijn de horrorboeken dikker geworden ten opzichte van de fantasyboeken
 	* Zijn hier nog speciale redenen voor? (Films die zijn uitgekomen bijvoorbeeld)
@@ -74,10 +72,10 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
 
 ## Verwachte data
 Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te beantwoorden :
-* Genres (horror & fantasy)
-* Publicatiedatum (1975 t/m 2018)
+* Genres (horror & fantasy) 🧟 👸🏽
+* Publicatiedatum (1975 t/m 2018) 📅
 * Aantal pagina's van het boek + lengte
-* Type (boek)
+* Type (boek) 📚
 * Autheur(s)
 
 Wat eventueel handig kan zijn (denk ik?) :
@@ -94,7 +92,7 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Hoe kan ik het omschrijven naar mijn eigen 
 
 ## Shout outs
-Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 
+🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
 * [Daniel van de Velde](https://github.com/DanielvandeVelde)
 
 ## Licentie
