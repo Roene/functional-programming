@@ -1,16 +1,23 @@
 # Functional Programming
+Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is terug te lezen wat ik tijdens dit project heb gedaan en welke onderzoeksvragen ik heb opgesteld. 
 
 ## Inhoud
+* [To Do](#to-do)
+* [Interessante data](#interessante-data)
+* [Onderzoeksvragen](#onderzoeksvragen)
+* [Deelvragen](#deelvragen)
+* [Problemen](#bronnen)
+* [Licentie](#licentie)
 
 ## To-Do
-[X] Hello API
-[ ] What the 🐒 zit er in de API? Krijg een idee van de informatie die je uit de API kan halen
-[ ] Verzin onderzoeksvragen 
-[ ] Verzin deelvragen 
-[ ] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden ([Boekdikte, auteur, thema])
-[ ] Haal deze data uit de API en sla die op in jouw eigen "datastore".
-[ ] Doorzoek die data op patronen
-[ ] Visualiseer de patronen met D3
+- [X] Hello API
+- [X] What the 🐒 zit er in de API? Krijg een idee van de informatie die je uit de API kan halen
+- [X] Verzin onderzoeksvragen 
+- [ ] Verzin deelvragen 
+- [ ] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden ([Boekdikte, auteur, thema])
+- [ ] Haal deze data uit de API en sla die op in jouw eigen "datastore".
+- [ ] Doorzoek die data op patronen
+- [ ] Visualiseer de patronen met D3
 
 ## Interessante data
 * Titel
@@ -38,12 +45,12 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
 *
 *
 
+## Verwachte data
+
 ## Problemen
 Tijdens het vak ben ik tot de volgende problemen opgelopen :
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
 * Hoe filteren op verschillende data?
-
-## Proces
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
