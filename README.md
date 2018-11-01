@@ -12,30 +12,35 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Licentie](#licentie)
 
 ## To-Do
+Tijdens dit project vond ik het lastig om uit te zoeken wat ik precies stap voor stap kon doen. Dit stappenplan van [Laursens](https://github.com/Razpudding) heeft mij hierin geholpen.
+ 
 - [X] Hello API.
 - [X] What the 🐒 zit er in de API? Krijg een idee van de informatie die je uit de API kan halen.
 - [X] Verzin onderzoeksvragen.
 - [X] Verzin deelvragen.
-- [ ] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
+- [X] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
 - [ ] Haal deze data uit de API en sla die op in jouw eigen "datastore".
 - [ ] Doorzoek die data op patronen
 - [ ] Visualiseer de patronen met D3
 
 ## Instalatie
-
+Om dit project te installeren ga je naar je *terminal* en voer je dit uit : 
 ```
-git clone https://github.com/Roene/functional-programming#deelvragen
+git clone https://github.com/Roene/functional-programming
 cd functional-programming
 npm install rijkvanzanten/node-oba-api
 npm install
 ```
+Dit project maakt gebruik van de volgende packages :
+* [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
+* [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Interessante data
 Tijdens het zoeken binnen de API ben ik gaan kijken welke data er terug kwam en welke hier interessant van is. 
 * Titel
 * Publicatie jaar
 * Autheurs 
-* Aantal pagina's van het boek & lengte in cm/
+* Aantal pagina's van het boek & lengte in cm
 * Genre(s) 
 * Samenvatting van het boek
 
@@ -53,7 +58,7 @@ Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 * Zijn er sinds de invoering van de vrouwenrechten in Nederland meer vrouwelijke schrijvers gekomen?
 * Heeft het aantal pagina's van een boek invloed op de hoogte van het boek?
 * Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden? 
-* Zijn er sinds 2000 zijn er meer boeken over de islam bijgekomen dan over het christendom?
+* Hoe zijn de boeken over de islam ten opzichte van de boeken over het christendom gegeroeid sinds 1990?
 
 De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn horror boeken ten opzichte van de fantasy boeken gegroeid in de periode 1975-2018?*
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
@@ -68,15 +73,25 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
 **H1** Sinds 1975 zijn er meer horrorboeken dan fantasyboeken bijgekomen
 
 ## Verwachte data
-Ik verwacht deze data nodig te hebben om mijn vragen te beantwoorden
+Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te beantwoorden :
+* Genres (horror & fantasy)
+* Publicatiedatum (1975 t/m 2018)
+* Aantal pagina's van het boek + lengte
+* Type (boek)
+* Autheur(s)
+
+Wat eventueel handig kan zijn (denk ik?) :
+* Titels
+* Samenvatting
 
 ## Bevindingen
-
+Tijdens het zoeken in de 
 
 ## Problemen
-Tijdens het vak ben ik tot de volgende problemen opgelopen :
+Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
-* Hoe filteren op verschillende data?
+* Hoe kan ik filteren op verschillende data?
+* Hoe kan ik het omschrijven naar mijn eigen 
 
 ## Shout outs
 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 
