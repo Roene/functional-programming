@@ -24,9 +24,28 @@ client.get('search', {
   librarian: 'true',
   page: '2'
 })
-  .then(results =>
-      JSON.parse(results).aquabrowser.results.result.forEach(function(e){
-          console.log(e);
-      })
-) // JSON results
-  .catch(err => console.log(err)) // Something went wrong in the request to the API
+//   .then(results =>
+//       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
+//           console.log(e);
+//       })
+// ) // JSON results
+//   .catch(err => console.log(err)) // Something went wrong in the request to the API
+
+//Bron code van Laurens | 31-10-2018 | College
+  .then(results => JSON.parse(results))
+  .then(results => {
+    var myData = getKeys(results)
+  })
+
+function getKeys(data){
+  var myData = data.aquabrowser.results.result.map(e => {    
+    return {
+      TITEL: e.titles.title.$t,
+      PUBLICATIE: e.publication? e.publication.year.$t : "Geen publicatie datum",
+      AUTHEUR: e.authors['main-author'].$t,
+      META: e.description? e.description['physical-description'].$t : "Geen meta data",
+      // GENRE: e.genres.genre.$t,
+    }
+  })
+  console.log(myData)
+}
