@@ -72,7 +72,7 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
 ## Verwachte data
 Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te beantwoorden :
-* Genres (horror & fantasy) 🧟 👸🏽
+* Genres (horror & fantasy) 🧟 🐉
 * Publicatiedatum (1975 t/m 2018) 📅
 * Aantal pagina's van het boek + lengte
 * Type (boek) 📚
@@ -83,7 +83,10 @@ Wat eventueel handig kan zijn (denk ik?) :
 * Samenvatting
 
 ## Bevindingen
-Tijdens het zoeken in de 
+Tijdens het zoeken in de ben ik tot de volgende conclusies gekomen :
+> Je krijgt maar 20 resultaten per keer maar je kan met page: '2' een andere pagina opvragen 
+> Veel data heb je niet nodig zoals bijvoorbeeld frabl & notes
+> Sommige data is niet aanwezig
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
