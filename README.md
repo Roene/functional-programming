@@ -53,13 +53,13 @@ De eerste onderzoeksvragen die ik heb opgesteld waren deze :
 Deze vragen waren nog niet goed genoeg aangezien dit voornamelijk ja/nee vragen waren, deze feedback kwam van klasgenoten. 
 Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 
-* Hoe zijn thrillers ten opzichte van de siencefiction gegroeid in de periode 1975-2018?
+* Hoe zijn thrillerboeken ten opzichte van de siencefictionboeken gegroeid in de periode 1975-2018?
 * Zijn er sinds de invoering van de vrouwenrechten in Nederland meer vrouwelijke schrijvers gekomen?
 * Heeft het aantal pagina's van een boek invloed op de hoogte van het boek?
 * Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden? 
 * Hoe zijn de boeken over de islam ten opzichte van de boeken over het christendom gegeroeid sinds 1990?
 
-De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn horror boeken ten opzichte van de fantasy boeken gegroeid in de periode 1975-2018?*
+De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn thrillerboeken ten opzichte van de siencefictionboeken gegroeid in de periode 1975-2018?*
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
 * Zijn er meer boeken met het genre horror bij gekomen dan het genre fantasy?

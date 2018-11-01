@@ -17,12 +17,12 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'Nederland',
+  q: 'Wereld Oorlog',
   sort: 'title',
   facet: 'type(book)',
-  refine: 'true',
-  librarian: 'true',
-  page: '1'
+  refine: true,
+  librarian: true,
+  page: 1
 })
 //   .then(results =>
 //       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
