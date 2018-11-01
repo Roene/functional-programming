@@ -18,7 +18,7 @@ Tijdens dit project vond ik het lastig om uit te zoeken wat ik precies stap voor
 - [X] Verzin onderzoeksvragen.
 - [X] Verzin deelvragen.
 - [X] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
-- [ ] Haal deze data uit de API en sla die op in jouw eigen "datastore".
+- [X] Haal deze data uit de API en sla die op in jouw eigen "datastore".
 - [ ] Doorzoek die data op patronen
 - [ ] Visualiseer de patronen met D3
 
@@ -53,13 +53,13 @@ De eerste onderzoeksvragen die ik heb opgesteld waren deze :
 Deze vragen waren nog niet goed genoeg aangezien dit voornamelijk ja/nee vragen waren, deze feedback kwam van klasgenoten. 
 Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 
-* Hoe zijn thrillerboeken ten opzichte van de siencefictionboeken gegroeid in de periode 1975-2018?
+* Hoe zijn thrillerboeken ten opzichte van de sciencefictionboeken gegroeid in de periode 1975-2018?
 * Zijn er sinds de invoering van de vrouwenrechten in Nederland meer vrouwelijke schrijvers gekomen?
 * Heeft het aantal pagina's van een boek invloed op de hoogte van het boek?
 * Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden? 
 * Hoe zijn de boeken over de islam ten opzichte van de boeken over het christendom gegeroeid sinds 1990?
 
-De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn thrillerboeken ten opzichte van de siencefictionboeken gegroeid in de periode 1975-2018?*
+De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn thrillerboeken ten opzichte van de sciencefictionboeken gegroeid in de periode 1975-2018?*
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
 * Zijn er meer boeken met het genre horror bij gekomen dan het genre fantasy?
@@ -90,6 +90,8 @@ Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekome
 * Veel data heb je niet nodig zoals bijvoorbeeld frabl & notes.
 * Sommige data komt terug als *object* of als *array*.
 
+Nadat ik erachter ben gekomen hoe ik data naar mijn eigen structuur kan schrijven ben ik gaan filteren op data die ik zelf wilde hebben. 
+
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
@@ -101,6 +103,7 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
 * [Daniel van de Velde](https://github.com/DanielvandeVelde)
+* [Jesse Dijkman](https://github.com/jesseDijkman1)
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/) © [Roene Verbeek](https://github.com/Roene)
