@@ -89,7 +89,9 @@ Tijdens het zoeken in de
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
 * Hoe kan ik filteren op verschillende data?
-* Hoe kan ik het omschrijven naar mijn eigen 
+* Hoe kan ik het omschrijven naar mijn eigen data?
+	* Hoe ga ik dit vervolgens opslaan?
+* Hoe ga ik deze data visualisren?
 
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
