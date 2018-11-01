@@ -3,6 +3,7 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 
 ## Inhoud
 * [To Do](#to-do)
+* [Installatie](#installatie)
 * [Interessante data](#interessante-data)
 * [Onderzoeksvragen](#onderzoeksvragen)
 * [Deelvragen](#deelvragen)
@@ -20,7 +21,17 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 - [ ] Doorzoek die data op patronen
 - [ ] Visualiseer de patronen met D3
 
+## Instalatie
+
+```
+git clone https://github.com/Roene/functional-programming#deelvragen
+cd functional-programming
+npm install rijkvanzanten/node-oba-api
+npm install
+```
+
 ## Interessante data
+Tijdens het zoeken binnen de API ben ik gaan kijken welke data er terug kwam en welke hier interessant van is. 
 * Titel
 * Publicatie jaar
 * Autheurs 
@@ -45,7 +56,6 @@ Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 * Zijn er sinds 2000 zijn er meer boeken over de islam bijgekomen dan over het christendom?
 
 De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn horror boeken ten opzichte van de fantasy boeken gegroeid in de periode 1975-2018?*
-
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
 
 ### Deelvragen
@@ -62,6 +72,7 @@ Ik verwacht deze data nodig te hebben om mijn vragen te beantwoorden
 
 ## Bevindingen
 
+
 ## Problemen
 Tijdens het vak ben ik tot de volgende problemen opgelopen :
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
@@ -69,7 +80,7 @@ Tijdens het vak ben ik tot de volgende problemen opgelopen :
 
 ## Shout outs
 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 
-[Daniel van de Velde](https://github.com/DanielvandeVelde)
+* [Daniel van de Velde](https://github.com/DanielvandeVelde)
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/)
