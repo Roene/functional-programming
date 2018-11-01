@@ -28,29 +28,32 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * Samenvatting van het boek
 
 ## Onderzoeksvragen
-* Hoe zijn horror boeken populairder geworden door de tijd (1980-2018) heen?
+* Hoe zijn horrorboeken ten opzichte van de fantasyboeken gegroeid in de periode 1975-2018?
 * Zijn er sinds de invoering van de vrouwenrechten in Nederland meer vrouwelijke schrijvers gekomen?
 * Heeft het aantal pagina's van een boek invloed op de hoogte van het boek?
 * Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden? 
 * Zijn er sinds 2000 zijn er meer boeken over de islam bijgekomen dan over het christendom?
 
-De vraag die ik het meest interessantste vond is de volgende : *Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden?*
+De vraag die ik het meest interessantste vond is de volgende : *Hoe zijn horror boeken ten opzichte van de fantasy boeken gegroeid in de periode 1975-2018?*
 
 Vervolgens ben ik voor deze vraag deelvragen gaan opstellen.
 
 ### Deelvragen
-* 
-*
+* Zijn er meer boeken met het genre horror bij gekomen dan fantasy?
+* Zijn de horrorboeken dikker geworden ten opzichte van de fantasyboeken
+	* Zijn hier nog speciale redenen voor? (Films die zijn uitgekomen bijvoorbeeld)
 *
 *
 *
 
 ## Verwachte data
 
+## Bevindingen
+
 ## Problemen
 Tijdens het vak ben ik tot de volgende problemen opgelopen :
 * Het uitzoeken van hoe de API precies werkt, wat zijn de mogelijke opties om op te zoeken?
 * Hoe filteren op verschillende data?
 
-## License
+## Licentie
 [MIT](https://choosealicense.com/licenses/mit/)
