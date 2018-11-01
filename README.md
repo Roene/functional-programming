@@ -69,7 +69,7 @@ Tijdens het vak ben ik tot de volgende problemen opgelopen :
 
 ## Shout outs
 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 
-Daniel van de Velde(https://github.com/DanielvandeVelde)
+[Daniel van de Velde](https://github.com/DanielvandeVelde)
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/)
