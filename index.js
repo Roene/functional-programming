@@ -17,12 +17,12 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'Harry potter',
+  q: 'Nederland',
   sort: 'title',
   facet: 'type(book)',
   refine: 'true',
   librarian: 'true',
-  page: '2'
+  page: '1'
 })
 //   .then(results =>
 //       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
@@ -41,10 +41,11 @@ function getKeys(data){
   var myData = data.aquabrowser.results.result.map(e => {    
     return {
       TITEL: e.titles.title.$t,
-      PUBLICATIE: e.publication? e.publication.year.$t : "Geen publicatie datum",
-      AUTHEUR: e.authors['main-author'].$t,
-      META: e.description? e.description['physical-description'].$t : "Geen meta data",
-      // GENRE: e.genres.genre.$t,
+      PUBLICATIE: e.publication? e.publication.year.$t : "GEEN PUBLICATIE DATUM",
+      AUTHEUR: e.authors? e.authors['main-author'].$t : "GEEN AUTHEUR",
+      META: e.description? e.description['physical-description'].$t : "GEEN META DATA",
+      TYPE: e.formats.format.$t,
+      GENRE: e.genres? e.genres.genre.$t : "GEEN GENRE",
     }
   })
   console.log(myData)

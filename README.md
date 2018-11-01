@@ -53,7 +53,7 @@ De eerste onderzoeksvragen die ik heb opgesteld waren deze :
 Deze vragen waren nog niet goed genoeg aangezien dit voornamelijk ja/nee vragen waren, deze feedback kwam van klasgenoten. 
 Vandaar dat ik nieuwe vragen ben gaan opstellen deze staan hieronder :
 
-* Hoe zijn horrorboeken ten opzichte van de fantasyboeken gegroeid in de periode 1975-2018?
+* Hoe zijn thrillers ten opzichte van de siencefiction gegroeid in de periode 1975-2018?
 * Zijn er sinds de invoering van de vrouwenrechten in Nederland meer vrouwelijke schrijvers gekomen?
 * Heeft het aantal pagina's van een boek invloed op de hoogte van het boek?
 * Zijn bepaalde genres sinds 1975 verdwenen / minder populair geworden? 
@@ -73,7 +73,7 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 
 ## Verwachte data
 Ik verwacht deze data nodig te hebben om mijn onderzoeksvraag + deelvragen te beantwoorden :
-* Genres (horror & fantasy) 🧟 🐉
+* Genres (thrillers & siencefiction)
 * Publicatiedatum (1975 t/m 2018) 📅
 * Aantal pagina's van het boek + lengte
 * Type (boek) 📚
