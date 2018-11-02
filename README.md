@@ -84,6 +84,8 @@ Wat eventueel handig kan zijn (denk ik?) :
 * Samenvatting
 * Taal
 
+![filter-data](images/filter-data.PNG)
+
 ## Bevindingen
 Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekomen :
 * Je krijgt maar 20 resultaten per keer maar je kan met page: '2' een andere pagina opvragen.
