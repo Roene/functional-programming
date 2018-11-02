@@ -96,6 +96,8 @@ Vervolgens ben ik gaan kijken of ik al kon kijken of ik wat nuttige informatie u
 * Het nieuwste thrillerboek in de OBA uit 2018 komt en 374 pagina's heeft. 
 * Het eerste sciencefictionboek in de OBA komt uit 1991 en 298 pagina's heeft.
 * Het nieuwse sciencefictionboek in de OBA komt uit 2018 en 237 pagina's heeft.  
+* Voor boeken met het genre Thriller zijn er 455 pagina's.
+* Voor boeken met het genre sciencefiction zijn 237 pagina's 
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
