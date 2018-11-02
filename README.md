@@ -86,6 +86,32 @@ Wat eventueel handig kan zijn (denk ik?) :
 
 ![filter-data](images/filter-data.PNG)
 
+De volgende code regelt dit : 
+```js
+// Bron code van Laurens | 31-10-2018 | College
+  .then(results => JSON.parse(results))
+  .then(results => {
+    var myData = getKeys(results)
+  })
+
+function getKeys(data){
+  var myData = data.aquabrowser.results.result.map(e => {    
+    return {
+      TITEL: e.titles['short-title'].$t,
+      PUBLICATIE: e.publication? parseInt(e.publication.year.$t, 10) : "GEEN PUBLICATIE DATUM",
+      AUTHEUR: e.authors? e.authors['main-author'].$t : "GEEN AUTHEUR",
+      META: e.description? e.description['physical-description'].$t : "GEEN META DATA",
+      TYPE: e.formats? e.formats.format.$t : "TYPE ONBEKEND",
+      // GENRE: e.genres? e.genres.genre.$t : "GEEN GENRE",
+      // Bron Jesse Dijkman
+      GENRE: e.genres? e.genres.genre.length > 1? e.genres.genre.map(x => x.$t) : e.genres.genre.$t : "GEEN GENRE", 
+      // Einde bron Jesse Dijkman     
+    }
+  })
+  console.log(myData)
+}
+```
+
 ## Bevindingen
 Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekomen :
 * Je krijgt maar 20 resultaten per keer maar je kan met page: '2' een andere pagina opvragen.

@@ -22,7 +22,7 @@ client.get('search', {
   facet: ['genre(thriller)', 'type(book)'],
   refine: true,
   librarian: true,
-  page: 88
+  page: 1
 })
 
 //   .then(results =>
@@ -42,7 +42,7 @@ function getKeys(data){
   var myData = data.aquabrowser.results.result.map(e => {    
     return {
       TITEL: e.titles['short-title'].$t,
-      PUBLICATIE: e.publication? e.publication.year.$t : "GEEN PUBLICATIE DATUM",
+      PUBLICATIE: e.publication? parseInt(e.publication.year.$t, 10) : "GEEN PUBLICATIE DATUM",
       AUTHEUR: e.authors? e.authors['main-author'].$t : "GEEN AUTHEUR",
       META: e.description? e.description['physical-description'].$t : "GEEN META DATA",
       TYPE: e.formats? e.formats.format.$t : "TYPE ONBEKEND",
