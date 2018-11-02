@@ -25,13 +25,6 @@ client.get('search', {
   page: 1
 })
 
-//   .then(results =>
-//       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
-//           console.log(e);
-//       })
-// ) // JSON results
-//   .catch(err => console.log(err)) // Something went wrong in the request to the API
-
 // Bron code van Laurens | 31-10-2018 | College
   .then(results => JSON.parse(results))
   .then(results => {
@@ -39,7 +32,7 @@ client.get('search', {
   })
 
 function getKeys(data){
-  var myData = data.aquabrowser.results.result.map(e => {    
+  var myData = data.aquabrowser.results.result.map(e => {  
     return {
       TITEL: e.titles['short-title'].$t,
       PUBLICATIE: e.publication? parseInt(e.publication.year.$t, 10) : "GEEN PUBLICATIE DATUM",
