@@ -1,4 +1,5 @@
 # Functional Programming
+⚠️⚠️⚠️ Vanwege vakantie bestaat deze readme voorlopig uit de 1e week van functional programming ⚠️⚠️⚠️
 Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is terug te lezen wat ik tijdens dit project heb gedaan en welke onderzoeksvragen ik heb opgesteld. 
 
 ## Inhoud
