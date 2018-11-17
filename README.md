@@ -9,6 +9,7 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Problemen](#problemen)
 * [Interessante charts](#interessante-charts)
 * [Conclusie](#conclusie)
+* [Observable](#observable)
 * [Shout outs](#shout-outs)
 * [Licentie](#licentie)
 
@@ -159,7 +160,13 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Scatter plot
 * Line chart
 
+> Hier komen nog schetsen
+
+## Observable
+Hier is uiteindelijk mijn uiteindelijke visualisatie : 
+
 ## Conclusie
+
 
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
