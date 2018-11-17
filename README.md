@@ -1,5 +1,4 @@
 # Functional Programming
-⚠️⚠️⚠️ Vanwege vakantie bestaat deze readme voorlopig uit de 1e week van functional programming ⚠️⚠️⚠️
 Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is terug te lezen wat ik tijdens dit project heb gedaan en welke onderzoeksvragen ik heb opgesteld. 
 
 ## Inhoud
@@ -8,6 +7,8 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Interessante data](#interessante-data)
 * [Onderzoeksvragen](#onderzoeksvragen)
 * [Problemen](#problemen)
+* [Interessante charts](#interessante-charts)
+* [Conclusie](#conclusie)
 * [Shout outs](#shout-outs)
 * [Licentie](#licentie)
 
@@ -121,12 +122,25 @@ Tijdens de eerste dag zoeken in de API ben ik tot de volgende bevindingen gekome
 
 Nadat ik erachter ben gekomen hoe ik data naar mijn eigen structuur kan schrijven ben ik gaan filteren op data die ik zelf wilde hebben. 
 Vervolgens ben ik gaan kijken of ik al kon kijken of ik wat nuttige informatie uit deze data kon halen. Zo ben ik erachter gekomen dat :
-* Het eerste thrillerboek in de OBA uit 1982 komt en 170 pagina's heeft
+* Het eerste thrillerboek in de OBA uit 1972 komt en 109 pagina's heeft
 * Het nieuwste thrillerboek in de OBA uit 2018 komt en 374 pagina's heeft. 
-* Het eerste sciencefictionboek in de OBA komt uit 1991 en 298 pagina's heeft.
+* Het eerste sciencefictionboek in de OBA komt uit 1975 en 424 pagina's heeft.
 * Het nieuwse sciencefictionboek in de OBA komt uit 2018 en 237 pagina's heeft.  
-* Voor boeken met het genre Thriller zijn er 455 pagina's.
-* Voor boeken met het genre sciencefiction zijn 237 pagina's 
+* Voor boeken met het genre Thriller zijn er 456 pagina's.
+* Voor boeken met het genre sciencefiction zijn 238 pagina's 
+
+Dit is hoe ik gezocht hebt :
+```js
+client.get('search', {
+  q: 'boek',
+  sort: 'year',
+  facet: ['genre(thriller)', 'type(book)'],
+  refine: true,
+  librarian: true,
+  page: 456
+})
+```
+> Vervang thriller voor sciencefiction 
 
 ## Problemen
 Tijdens het vak ben ik op de volgende problemen / vragen gekomen
@@ -136,10 +150,21 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 	* Hoe ga ik dit vervolgens opslaan?
 * Hoe ga ik deze data visualisren?
 
+*Nadat ik mijn onderzoeksvraag had opgesteld kwamen de volgende problemen :*
+* Hoe ga ik alle boeken met genre thriller / sciencefiction ophalen?
+* Is de tijd die ik pak niet te groot? 1975 tot 2018 is een tijd van 43 jaar.
+
+## Interessante charts 
+* Double bar chart
+* Scatter plot
+* Line chart
+
+## Conclusie
+
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
-* [Daniel van de Velde](https://github.com/DanielvandeVelde)
-* [Jesse Dijkman](https://github.com/jesseDijkman1)
+* [Daniel van de Velde](https://github.com/DanielvandeVelde) Voor de readme
+* [Jesse Dijkman](https://github.com/jesseDijkman1) Voor wat code en debugging
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/) © [Roene Verbeek](https://github.com/Roene)

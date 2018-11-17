@@ -17,12 +17,12 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'thriller',
+  q: 'boek',
   sort: 'year',
   facet: ['genre(thriller)', 'type(book)'],
   refine: true,
   librarian: true,
-  page: 1
+  page: 456
 })
 
 // Bron code van Laurens | 31-10-2018 | College
@@ -37,11 +37,10 @@ function getKeys(data){
       TITEL: e.titles['short-title'].$t,
       PUBLICATIE: e.publication? parseInt(e.publication.year.$t, 10) : "GEEN PUBLICATIE DATUM",
       AUTHEUR: e.authors? e.authors['main-author'].$t : "GEEN AUTHEUR",
-      META: e.description? e.description['physical-description'].$t : "GEEN META DATA",
+      PAGES: e.description ? parseInt(e.description['physical-description']['$t'].match(/\d+/g).map(Number),10): 0,
       TYPE: e.formats? e.formats.format.$t : "TYPE ONBEKEND",
-      // GENRE: e.genres? e.genres.genre.$t : "GEEN GENRE",
       // Bron Jesse Dijkman
-      GENRE: e.genres? e.genres.genre.length > 1? e.genres.genre.map(x => x.$t) : e.genres.genre.$t : "GEEN GENRE", 
+      GENRE: e.genres? e.genres.genre.length > 1? e.genres.genre.map(x => x.$t) : e.genres.genre.$t : "GEEN GENRE"
       // Einde bron Jesse Dijkman     
     }
   })
