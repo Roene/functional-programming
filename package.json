@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^6.1.0",
+    "file-system": "^2.2.2",
     "jsontool": "^7.0.2",
     "oba-api": "github:rijkvanzanten/node-oba-api",
     "xml2js": "^0.4.19"

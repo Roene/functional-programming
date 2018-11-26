@@ -1,12 +1,13 @@
 require('dotenv').config()
-const OBA = require('oba-api');
+const OBA = require('oba-api')
+var fs = require("file-system")
 
 // Setup authentication to api server
 const client = new OBA({
   // ProQuest API Keys
   public: process.env.PUBLIC,
   secret: process.env.SECRET
-});
+})
 
 // General usage:
 // client.get({ENDPOINT}, {PARAMS});
@@ -16,34 +17,79 @@ const client = new OBA({
 // Client returns a promise which resolves the APIs output in JSON
 
 // Example search to the word 'rijk' sorted by title:
+
+var allData = []; 
+
 client.get('search', {
-  q: 'boek',
-  sort: 'year',
-  facet: ['genre(thriller)', 'type(book)'],
+  q: 'format:book',
   refine: true,
-  librarian: true,
-  page: 456
+  librarian: true
 })
-
-// Bron code van Laurens | 31-10-2018 | College
-  .then(results => JSON.parse(results))
-  .then(results => {
-    var myData = getKeys(results)
+  // Bron Sterre van Geest
+  .then(response => JSON.parse(response).aquabrowser)
+  .then(response => {
+    var selectedRctx = []
+    var selectedYears = []
+     var years = getYears(selectedYears)
+     selectedYears.forEach(function(years) {
+      client
+        .get("search", {
+          q: years,
+          librarian: true,
+          refine: true
+        })
+        .then(response => JSON.parse(response).aquabrowser)
+        .then(response => {
+          var rctx = response.meta.rctx
+          selectedRctx.push(rctx)
+           if (selectedRctx.length == 11) {
+            selectedRctx.forEach(function(selectedRctx) {
+              client
+                .get("refine", {
+                  rctx: selectedRctx,
+                  count: 100
+                })
+                .then(response => JSON.parse(response).aquabrowser)
+                .then(response => {
+                  var genreFacet = getGenreFacet(response)
+                })
+            })
+          }
+        })
+    })
   })
+  .catch(err => console.error(err));
 
-function getKeys(data){
-  var myData = data.aquabrowser.results.result.map(e => {  
-    return {
-      TITEL: e.titles['short-title'].$t,
-      PUBLICATIE: e.publication? parseInt(e.publication.year.$t, 10) : "GEEN PUBLICATIE DATUM",
-      AUTHEUR: e.authors? e.authors['main-author'].$t : "GEEN AUTHEUR",
-      PAGES: e.description ? parseInt(e.description['physical-description']['$t'].match(/\d+/g).map(Number),10): 0,
-      TYPE: e.formats? e.formats.format.$t : "TYPE ONBEKEND",
-      // Bron Jesse Dijkman
-      GENRE: e.genres? e.genres.genre.length > 1? e.genres.genre.map(x => x.$t) : e.genres.genre.$t : "GEEN GENRE"
-      // Einde bron Jesse Dijkman     
+function getYears(selectedYears) {
+  var period = 50
+   for (var i = 0; i <= period; i = i + 5) {
+    var year = "year:" + (1965 + i)
+    selectedYears.push(year)
+  }
+}
+
+function getGenreFacet(data) {
+  var languageId = data.meta["original-query"]
+  var year = languageId.slice(6, 10)
+  var facets = data.facets.facet
+   facets.forEach(function(facets) {
+    var facetId = facets.id;
+    if (facetId === "Genre") {
+      var values = facets.value;
+      values.forEach(function(values) {
+        var count = values.count
+        var id = values.id;
+        allData.push({
+          year: year,
+          genre: id,
+          count: count
+        })
+        var allDataJson = JSON.stringify(allData)
+        fs.writeFileSync("data.json", allDataJson, err => {
+          if (err) throw err
+          console.log("All data written to data.json")
+        })
+      })
     }
   })
-  console.log(myData)
 }
-// Einde bron Laurens
