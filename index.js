@@ -20,8 +20,8 @@ const client = new OBA({
 
 var allData = []; 
 
-client.get('search', {
-  q: 'format:book',
+client.get("search", {
+  q: "genre:biografie",
   refine: true,
   librarian: true
 })
@@ -86,8 +86,8 @@ function getGenreFacet(data) {
         })
         var allDataJson = JSON.stringify(allData)
         fs.writeFileSync("data.json", allDataJson, err => {
-          if (err) throw err
           console.log("All data written to data.json")
+          if (err) throw err
         })
       })
     }

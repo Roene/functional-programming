@@ -72,6 +72,9 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 * Is er een verschil tussen de jaren heen van het aantal schrijvers voor deze genres?
 * Zijn er meer Nederlandse thrillerboeken dan Engelse thrillerboeken?
 
+Doordat ik niet het totaal aantal boeken kon ophalen van de genres thriller en sciencefiction heb ik mijn vraag opnieuw gesteld. 
+*Hoe zijn de thrillerboeken ten opzichte van de sciencefictionboeken gegroeid in de periode 1975-2015 per 5 jaar?*
+
 ## Hypothese
 **H1** Sinds 1975 zijn er meer thrillerboeken dan sciencefiction bijgekomen
 
@@ -157,11 +160,13 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 * Is de tijd die ik pak niet te groot? 1975 tot 2018 is een tijd van 43 jaar.
 
 ## Interessante charts 
-* Double bar chart
+* Bar chart
 * Scatter plot
 * Line chart
+* Horizontal bar chart
 
-> Hier komen nog schetsen
+![schetsen](images/schetsen.jpg)
+> Aantal schetsen om inspiratie op te doen.
 
 ## Data ophalen
 Uiteindelijk kwam ik eracht
