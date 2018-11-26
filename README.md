@@ -8,8 +8,9 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Onderzoeksvragen](#onderzoeksvragen)
 * [Problemen](#problemen)
 * [Interessante charts](#interessante-charts)
+* [Data ophalen](#data-ophalen)
+* [Visualisatie](#visualisatie)
 * [Conclusie](#conclusie)
-* [Observable](#observable)
 * [Shout outs](#shout-outs)
 * [Licentie](#licentie)
 
@@ -162,8 +163,11 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 
 > Hier komen nog schetsen
 
-## Observable
-Hier is uiteindelijk mijn uiteindelijke visualisatie : 
+## Data ophalen
+Uiteindelijk kwam ik eracht
+
+## Visualisatie
+Hier is uiteindelijk mijn uiteindelijke visualisatie
 
 ## Conclusie
 
