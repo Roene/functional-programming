@@ -72,7 +72,7 @@ Vervolgens ben ik voor deze vraag deelvragen gaan opstellen :
 * Is er een verschil tussen de jaren heen van het aantal schrijvers voor deze genres?
 * Zijn er meer Nederlandse thrillerboeken dan Engelse thrillerboeken?
 
-Doordat ik niet het totaal aantal boeken kon ophalen van de genres thriller en sciencefiction heb ik mijn vraag opnieuw gesteld. 
+Doordat ik niet het totaal aantal boeken per jaar kon ophalen van de genres thriller en sciencefiction heb ik mijn vraag opnieuw gesteld. 
 *Hoe zijn de thrillerboeken ten opzichte van de sciencefictionboeken gegroeid in de periode 1975-2015 per 5 jaar?*
 
 ## Hypothese
@@ -169,7 +169,13 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 > Aantal schetsen om inspiratie op te doen.
 
 ## Data ophalen
-Uiteindelijk kwam ik eracht
+Om uiteindelijk mijn visualisatie te maken had ik 3 dingen nodig :
+* Genre
+* Publicatiejaar
+* Aantal boeken van dit genre in het publicatie jaar
+
+Dit heb ik op de volgende manier opgelost.
+
 
 ## Visualisatie
 Hier is uiteindelijk mijn uiteindelijke visualisatie
@@ -179,8 +185,9 @@ Hier is uiteindelijk mijn uiteindelijke visualisatie
 
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
-* [Daniel van de Velde](https://github.com/DanielvandeVelde) Voor de readme
-* [Jesse Dijkman](https://github.com/jesseDijkman1) Voor wat code en debugging
+* [Daniel van de Velde](https://github.com/DanielvandeVelde) Voor de readme.
+* [Jesse Dijkman](https://github.com/jesseDijkman1) Voor wat code en debugging.
+* [Sterre van Geest](https://github.com/sterrevangeest/frontend-data/blob/master/data/index.js) Voor de code om aantal boeken per genre in 1 jaar op te halen.
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/) © [Roene Verbeek](https://github.com/Roene)

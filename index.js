@@ -21,7 +21,7 @@ const client = new OBA({
 var allData = []; 
 
 client.get("search", {
-  q: "genre:biografie",
+  q: "format:books",
   refine: true,
   librarian: true
 })
@@ -58,7 +58,7 @@ client.get("search", {
         })
     })
   })
-  .catch(err => console.error(err));
+  .catch(err => console.error(err))
 
 function getYears(selectedYears) {
   var period = 50
@@ -73,12 +73,12 @@ function getGenreFacet(data) {
   var year = languageId.slice(6, 10)
   var facets = data.facets.facet
    facets.forEach(function(facets) {
-    var facetId = facets.id;
+    var facetId = facets.id
     if (facetId === "Genre") {
-      var values = facets.value;
+      var values = facets.value
       values.forEach(function(values) {
         var count = values.count
-        var id = values.id;
+        var id = values.id
         allData.push({
           year: year,
           genre: id,
@@ -86,7 +86,6 @@ function getGenreFacet(data) {
         })
         var allDataJson = JSON.stringify(allData)
         fs.writeFileSync("data.json", allDataJson, err => {
-          console.log("All data written to data.json")
           if (err) throw err
         })
       })
