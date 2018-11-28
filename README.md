@@ -175,8 +175,41 @@ Om uiteindelijk mijn visualisatie te maken had ik 3 dingen nodig :
 * Publicatiejaar
 * Aantal boeken van dit genre in het publicatie jaar
 
-Dit heb ik op de volgende manier opgelost :
+Dit heb ik op de volgende manier opgelost (met de hulp van Sterre's code) :
+```js
+client.get("search", {
+  q: "format:books",
+  refine: true,
+  librarian: true
+})
+``` 
+Met dit stukje halen we alle boeken op, door refine op true te zetten kun je ook de counts ophalen bijvoorbeeld het aantal boeken per genre
 
+```js
+selectedRctx.forEach(function(selectedRctx) {
+  client
+    .get("refine", {
+      rctx: selectedRctx,
+      count: 100
+    })
+    .then(response => JSON.parse(response).aquabrowser)
+    .then(response => {
+      var genreFacet = getGenreFacet(response)
+    })
+``` 
+Met ```getGenreFacet(response)``` haal ik de benodigde data op uit het facet genre, deze data wordt dan weer opgeslagen in data.json.
+
+Dit stukje zorgt ervoor dat ik een bepaalde periode kan ophalen, de API kan het niet aan om alle jaren op te halen vanaf 1975 dus daarom moest ik het zo oplossen :
+```js
+function getYears(selectedYears) {
+    var period = 50
+    for (var i = 0; i <= period; i = i + 5) {
+        var year = "year:" + (1965 + i)
+        selectedYears.push(year)
+    }
+}
+``` 
+Er wordt wordt gestart met 1965 en elke 5 jaar daarna dus 1970, 1975, ect. Dit gaat door t/m 2015
 
 ## Visualisatie
 Hier is uiteindelijk mijn uiteindelijke visualisatie

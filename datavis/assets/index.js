@@ -82,26 +82,28 @@ var year = svg.selectAll(".year")
   .attr("class", "year")
   .attr("transform", d => `translate(${xScale0(d.year)},0)`)
 
+// Bars voor sciencefiction worden hier gemaakt
 year.selectAll(".bar.count1")
   .data(d => [d])
   .enter()
   .append("rect")
   .attr("class", "bar count1")
 .style("fill","blue")
-  .attr("x", d => xScale1('count1'))
+  .attr("x", d => xScale1("count1"))
   .attr("y", d => yScale(d.count1))
   .attr("width", xScale1.bandwidth())
   .attr("height", d => {
     return height - margin.top - margin.bottom - yScale(d.count1)
   })
-  
+
+// Bars voor Thriller worden hier gemaakt  
 year.selectAll(".bar.count2")
   .data(d => [d])
   .enter()
   .append("rect")
   .attr("class", "bar count2")
 .style("fill","red")
-  .attr("x", d => xScale1('count2'))
+  .attr("x", d => xScale1("count2"))
   .attr("y", d => yScale(d.count2))
   .attr("width", xScale1.bandwidth())
   .attr("height", d => {
