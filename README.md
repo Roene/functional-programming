@@ -215,7 +215,15 @@ Er wordt wordt gestart met 1965 en elke 5 jaar daarna dus 1970, 1975, ect. Dit g
 Hier is uiteindelijk mijn uiteindelijke visualisatie
 
 ## Conclusie
+De 1e week van dit vak heb ik vooral moeten besteden aan hoe de API werkte, uiteindelijk heeft de readme van Daniel mij hier een flink stuk in geholpen. Vervolgens ben ik gaan een beetje in de data gaan zoeken om te kijken wat ik wilde visualiseren. Nadat ik dit wist ben ik gerichter gaan zoeken naar hoe ik deze data kon verkrijgen. Ik heb uiteindelijk gekozen om een bar chart te maken. Ook was het misschien achteraf niet zo slim om 1 week te missen voor een vakantie naar Lissabon.
 
+Maar toch wel wat mooie foto's gemaakt 🇵🇹 :
+
+![Lisbon](images/lisbon.jpg)
+> Lissabon
+
+![Lisbon](images/training.jpg)
+> Ajax
 
 ## Shout outs
 🙏🏻 Special thanks naar deze mensen die mij hebben geholpen tijdens dit project. 🙏🏻
