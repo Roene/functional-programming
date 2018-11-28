@@ -158,6 +158,7 @@ Tijdens het vak ben ik op de volgende problemen / vragen gekomen
 *Nadat ik mijn onderzoeksvraag had opgesteld kwamen de volgende problemen :*
 * Hoe ga ik alle boeken met genre thriller / sciencefiction ophalen?
 * Is de tijd die ik pak niet te groot? 1975 tot 2018 is een tijd van 43 jaar.
+* Hoe kan ik deze tijdsperiode ophalen? 
 
 ## Interessante charts 
 * Bar chart
@@ -174,7 +175,7 @@ Om uiteindelijk mijn visualisatie te maken had ik 3 dingen nodig :
 * Publicatiejaar
 * Aantal boeken van dit genre in het publicatie jaar
 
-Dit heb ik op de volgende manier opgelost.
+Dit heb ik op de volgende manier opgelost :
 
 
 ## Visualisatie
