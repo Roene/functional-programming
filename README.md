@@ -259,7 +259,6 @@ Maar toch wel wat mooie foto's gemaakt :
 * [Sterre van Geest](https://github.com/sterrevangeest/frontend-data/blob/master/data/index.js) Voor de code om aantal boeken per genre in 1 jaar op te halen.
 
 ## Bronnen 
-* [De basis van dit project](https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e)
 * [Labels voor de assen](https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e)
 * [Voor xScale & yScale](https://jsfiddle.net/354zw0d2/9/)
 
