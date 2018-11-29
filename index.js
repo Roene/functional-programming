@@ -60,6 +60,7 @@ client.get("search", {
     })
     .catch(err => console.error(err))
 
+// Voor elke 5 jaar worden de counts opgehaald vanaf 1965 t/m 2015
 function getYears(selectedYears) {
     var period = 50
     for (var i = 0; i <= period; i = i + 5) {
@@ -68,6 +69,7 @@ function getYears(selectedYears) {
     }
 }
 
+// Vorm data om naar hoe ik het wil ontvangen
 function getGenreFacet(data) {
     var languageId = data.meta["original-query"]
     var year = languageId.slice(6, 10)
@@ -83,7 +85,7 @@ function getGenreFacet(data) {
                     year: year,
                     genre: id,
                     count: count
-                })
+                }) // Data naar json file
                 var allDataJson = JSON.stringify(allData)
                 fs.writeFileSync("data.json", allDataJson, err => {
                     if (err) throw err

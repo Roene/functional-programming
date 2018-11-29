@@ -1,3 +1,10 @@
+/* Bronnen : 
+https://beta.observablehq.com/@mbostock/d3-bar-chart
+https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e
+https://jsfiddle.net/354zw0d2/9/
+*/
+
+// Data van genres per 5 jaar 
 var data = [
   {
     "year":1970,
@@ -51,12 +58,14 @@ var data = [
   }
 ]
 
+// Hier wordt alles aan de svg meegegeven
+// Padding bijvoorbeeld padding tussen bars en aantal ticks op de y as
 var svgSelect = d3.select("svg")
 var width = 1020
 var height = 850
 var margin = {top: 35, right: 25, bottom: 35, left: 50}
 var paddingBars = .2
-var axisTicks = {amount: 25, outerSize: 0}
+var ticks = {amount: 25, outerSize: 0}
 
 var svg = svgSelect
     .append("svg")
@@ -65,16 +74,19 @@ var svg = svgSelect
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`)
 
+// BRON : https://jsfiddle.net/354zw0d2/9/
 var xScale0 = d3.scaleBand().range([0, width - margin.left - margin.right]).padding(paddingBars)
 var xScale1 = d3.scaleBand()
 var yScale = d3.scaleLinear().range([height - margin.top - margin.bottom, 0])
 
-var xAxis = d3.axisBottom(xScale0).tickSizeOuter(axisTicks.outerSize)
-var yAxis = d3.axisLeft(yScale).ticks(axisTicks.amount).tickSizeOuter(axisTicks.outerSize)
+// Ticks instellen op de assen
+var xAxis = d3.axisBottom(xScale0).tickSizeOuter(ticks.outerSize)
+var yAxis = d3.axisLeft(yScale).ticks(ticks.amount).tickSizeOuter(ticks.outerSize)
 
 xScale0.domain(data.map(d => d.year))
 xScale1.domain(['count1', 'count2']).range([0, xScale0.bandwidth()])
 yScale.domain([0, d3.max(data, d => d.count1 > d.count2 ? d.count1 : d.count2)])
+// EINDE BRON : https://jsfiddle.net/354zw0d2/9/
 
 var year = svg.selectAll(".year")
   .data(data)
@@ -83,11 +95,11 @@ var year = svg.selectAll(".year")
   .attr("transform", d => `translate(${xScale0(d.year)},0)`)
 
 // Bars voor sciencefiction worden hier gemaakt
-year.selectAll(".bar.count1")
+year.selectAll(".count1")
   .data(d => [d])
   .enter()
   .append("rect")
-  .attr("class", "bar count1")
+  .attr("class", "count1")
 .style("fill","blue")
   .attr("x", d => xScale1("count1"))
   .attr("y", d => yScale(d.count1))
@@ -97,11 +109,11 @@ year.selectAll(".bar.count1")
   })
 
 // Bars voor Thriller worden hier gemaakt  
-year.selectAll(".bar.count2")
+year.selectAll(".count2")
   .data(d => [d])
   .enter()
   .append("rect")
-  .attr("class", "bar count2")
+  .attr("class", "count2")
 .style("fill","red")
   .attr("x", d => xScale1("count2"))
   .attr("y", d => yScale(d.count2))
@@ -129,7 +141,7 @@ svg.append("g")
    .attr("class", "y axis")
    .call(yAxis)
 
-// Label voor dde y ass
+// Label voor de y ass
 // BRON https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e
 svg.append("text")
     .attr("transform", "rotate(-90)")

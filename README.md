@@ -9,9 +9,11 @@ Deze readme bestaat uit het onderzoek over de data van de OBA API. Hieronder is 
 * [Problemen](#problemen)
 * [Interessante charts](#interessante-charts)
 * [Data ophalen](#data-ophalen)
+* [Functional programming](#functional-programming)
 * [Visualisatie](#visualisatie)
 * [Conclusie](#conclusie)
 * [Shout outs](#shout-outs)
+* [Bronnen](#bronnen)
 * [Licentie](#licentie)
 
 ## To-Do
@@ -24,7 +26,7 @@ Tijdens dit project vond ik het lastig om uit te zoeken wat ik precies stap voor
 - [X] Bedenk welke variablen je nodig gaat hebben om je vraag te beantwoorden.
 - [X] Haal deze data uit de API en sla die op in jouw eigen "datastore".
 - [X] Doorzoek die data op patronen
-- [ ] Visualiseer de patronen met D3
+- [X] Visualiseer de patronen met D3
 
 ## Instalatie
 Om dit project te installeren ga je naar je *terminal* en voer je dit uit : 
@@ -211,13 +213,38 @@ function getYears(selectedYears) {
 ``` 
 Er wordt wordt gestart met 1965 en elke 5 jaar daarna dus 1970, 1975, ect. Dit gaat door t/m 2015
 
+### Functional programming
+
+In het begin van dit vak hield ik mij nog niet echt bezig met functional programming. Als je achteraf terugkijkt op de code dan zie je bijvoorbeeld in dit stukje :
+```js
+function getGenreFacet(data) {
+    var languageId = data.meta["original-query"]
+    var year = languageId.slice(6, 10)
+    var facets = data.facets.facet
+    facets.forEach(function(facets) {
+        var facetId = facets.id
+        if (facetId === "Genre") {
+            var values = facets.value
+            values.forEach(function(values) {
+                var count = values.count
+                var id = values.id
+                allData.push({
+                    year: year,
+                    genre: id,
+                    count: count
+                })
+``` 
+Haal je data op uit de API, herstructureer dit, maar verander de data niet. 
+
 ## Visualisatie
-Hier is uiteindelijk mijn uiteindelijke visualisatie
+Dit is uiteindelijk mijn [visualisatie](https://roene.github.io/functional-programming/datavis/)
 
 ## Conclusie
-De 1e week van dit vak heb ik vooral moeten besteden aan hoe de API werkte, uiteindelijk heeft de readme van Daniel mij hier een flink stuk in geholpen. Vervolgens ben ik gaan een beetje in de data gaan zoeken om te kijken wat ik wilde visualiseren. Nadat ik dit wist ben ik gerichter gaan zoeken naar hoe ik deze data kon verkrijgen. Ik heb uiteindelijk gekozen om een bar chart te maken. Ook was het misschien achteraf niet zo slim om 1 week te missen voor een vakantie naar Lissabon.
+De 1e week van dit vak heb ik vooral moeten besteden aan hoe de API werkte, uiteindelijk heeft de readme van Daniel mij hier een flink stuk in geholpen. Vervolgens ben ik gaan een beetje in de data gaan zoeken om te kijken wat ik wilde visualiseren. Nadat ik dit wist ben ik gerichter gaan zoeken naar hoe ik deze data kon verkrijgen. Ik heb uiteindelijk gekozen om een bar chart te maken. Hier ben ik niet helemaal tevreden over, de kleine bars zijn niet echt goed te zien.
+Wel is het leuk om te zien hoe de groei van de Thrillers is gegaan ten opzichte van sciencefiction en dat er in sommige jaren bijvoorbeeld geen boeken met het genre Thriller zijn. 🤔🤔
 
-Maar toch wel wat mooie foto's gemaakt 🇵🇹 :
+Ook was het misschien achteraf niet zo slim om 1 week te missen voor een vakantie naar Lissabon.
+Maar toch wel wat mooie foto's gemaakt :
 
 ![Lisbon](images/lisbon.jpg)
 > Lissabon
@@ -230,6 +257,11 @@ Maar toch wel wat mooie foto's gemaakt 🇵🇹 :
 * [Daniel van de Velde](https://github.com/DanielvandeVelde) Voor de readme.
 * [Jesse Dijkman](https://github.com/jesseDijkman1) Voor wat code en debugging.
 * [Sterre van Geest](https://github.com/sterrevangeest/frontend-data/blob/master/data/index.js) Voor de code om aantal boeken per genre in 1 jaar op te halen.
+
+## Bronnen 
+* [De basis van dit project](https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e)
+* [Labels voor de assen](https://bl.ocks.org/d3noob/23e42c8f67210ac6c678db2cd07a747e)
+* [Voor xScale & yScale](https://jsfiddle.net/354zw0d2/9/)
 
 ## Licentie
 [MIT](https://choosealicense.com/licenses/mit/) © [Roene Verbeek](https://github.com/Roene)
